@@ -2055,7 +2055,7 @@ impl StructureType {
 impl KhrVideoDecodeQueueFn {
     pub const NAME: &'static ::std::ffi::CStr =
         unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_KHR_video_decode_queue\0") };
-    pub const SPEC_VERSION: u32 = 7u32;
+    pub const SPEC_VERSION: u32 = 8u32;
 }
 #[allow(non_camel_case_types)]
 pub type PFN_vkCmdDecodeVideoKHR = unsafe extern "system" fn(
@@ -2754,66 +2754,66 @@ impl AmdShaderBallotFn {
 }
 #[derive(Clone)]
 pub struct AmdShaderBallotFn;
-impl ExtVideoEncodeH264Fn {
+impl KhrVideoEncodeH264Fn {
     pub const NAME: &'static ::std::ffi::CStr =
-        unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_EXT_video_encode_h264\0") };
-    pub const SPEC_VERSION: u32 = 12u32;
+        unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_KHR_video_encode_h264\0") };
+    pub const SPEC_VERSION: u32 = 14u32;
 }
 #[derive(Clone)]
-pub struct ExtVideoEncodeH264Fn;
-#[doc = "Generated from 'VK_EXT_video_encode_h264'"]
+pub struct KhrVideoEncodeH264Fn;
+#[doc = "Generated from 'VK_KHR_video_encode_h264'"]
 impl StructureType {
-    pub const VIDEO_ENCODE_H264_CAPABILITIES_EXT: Self = Self(1_000_038_000);
-    pub const VIDEO_ENCODE_H264_SESSION_PARAMETERS_CREATE_INFO_EXT: Self = Self(1_000_038_001);
-    pub const VIDEO_ENCODE_H264_SESSION_PARAMETERS_ADD_INFO_EXT: Self = Self(1_000_038_002);
-    pub const VIDEO_ENCODE_H264_PICTURE_INFO_EXT: Self = Self(1_000_038_003);
-    pub const VIDEO_ENCODE_H264_DPB_SLOT_INFO_EXT: Self = Self(1_000_038_004);
-    pub const VIDEO_ENCODE_H264_NALU_SLICE_INFO_EXT: Self = Self(1_000_038_005);
-    pub const VIDEO_ENCODE_H264_GOP_REMAINING_FRAME_INFO_EXT: Self = Self(1_000_038_006);
-    pub const VIDEO_ENCODE_H264_PROFILE_INFO_EXT: Self = Self(1_000_038_007);
-    pub const VIDEO_ENCODE_H264_RATE_CONTROL_INFO_EXT: Self = Self(1_000_038_008);
-    pub const VIDEO_ENCODE_H264_RATE_CONTROL_LAYER_INFO_EXT: Self = Self(1_000_038_009);
-    pub const VIDEO_ENCODE_H264_SESSION_CREATE_INFO_EXT: Self = Self(1_000_038_010);
-    pub const VIDEO_ENCODE_H264_QUALITY_LEVEL_PROPERTIES_EXT: Self = Self(1_000_038_011);
-    pub const VIDEO_ENCODE_H264_SESSION_PARAMETERS_GET_INFO_EXT: Self = Self(1_000_038_012);
-    pub const VIDEO_ENCODE_H264_SESSION_PARAMETERS_FEEDBACK_INFO_EXT: Self = Self(1_000_038_013);
+    pub const VIDEO_ENCODE_H264_CAPABILITIES_KHR: Self = Self(1_000_038_000);
+    pub const VIDEO_ENCODE_H264_SESSION_PARAMETERS_CREATE_INFO_KHR: Self = Self(1_000_038_001);
+    pub const VIDEO_ENCODE_H264_SESSION_PARAMETERS_ADD_INFO_KHR: Self = Self(1_000_038_002);
+    pub const VIDEO_ENCODE_H264_PICTURE_INFO_KHR: Self = Self(1_000_038_003);
+    pub const VIDEO_ENCODE_H264_DPB_SLOT_INFO_KHR: Self = Self(1_000_038_004);
+    pub const VIDEO_ENCODE_H264_NALU_SLICE_INFO_KHR: Self = Self(1_000_038_005);
+    pub const VIDEO_ENCODE_H264_GOP_REMAINING_FRAME_INFO_KHR: Self = Self(1_000_038_006);
+    pub const VIDEO_ENCODE_H264_PROFILE_INFO_KHR: Self = Self(1_000_038_007);
+    pub const VIDEO_ENCODE_H264_RATE_CONTROL_INFO_KHR: Self = Self(1_000_038_008);
+    pub const VIDEO_ENCODE_H264_RATE_CONTROL_LAYER_INFO_KHR: Self = Self(1_000_038_009);
+    pub const VIDEO_ENCODE_H264_SESSION_CREATE_INFO_KHR: Self = Self(1_000_038_010);
+    pub const VIDEO_ENCODE_H264_QUALITY_LEVEL_PROPERTIES_KHR: Self = Self(1_000_038_011);
+    pub const VIDEO_ENCODE_H264_SESSION_PARAMETERS_GET_INFO_KHR: Self = Self(1_000_038_012);
+    pub const VIDEO_ENCODE_H264_SESSION_PARAMETERS_FEEDBACK_INFO_KHR: Self = Self(1_000_038_013);
 }
-#[doc = "Generated from 'VK_EXT_video_encode_h264'"]
+#[doc = "Generated from 'VK_KHR_video_encode_h264'"]
 impl VideoCodecOperationFlagsKHR {
-    pub const ENCODE_H264_EXT: Self = Self(0b1_0000_0000_0000_0000);
+    pub const ENCODE_H264: Self = Self(0b1_0000_0000_0000_0000);
 }
-impl ExtVideoEncodeH265Fn {
+impl KhrVideoEncodeH265Fn {
     pub const NAME: &'static ::std::ffi::CStr =
-        unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_EXT_video_encode_h265\0") };
-    pub const SPEC_VERSION: u32 = 12u32;
+        unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_KHR_video_encode_h265\0") };
+    pub const SPEC_VERSION: u32 = 14u32;
 }
 #[derive(Clone)]
-pub struct ExtVideoEncodeH265Fn;
-#[doc = "Generated from 'VK_EXT_video_encode_h265'"]
+pub struct KhrVideoEncodeH265Fn;
+#[doc = "Generated from 'VK_KHR_video_encode_h265'"]
 impl StructureType {
-    pub const VIDEO_ENCODE_H265_CAPABILITIES_EXT: Self = Self(1_000_039_000);
-    pub const VIDEO_ENCODE_H265_SESSION_PARAMETERS_CREATE_INFO_EXT: Self = Self(1_000_039_001);
-    pub const VIDEO_ENCODE_H265_SESSION_PARAMETERS_ADD_INFO_EXT: Self = Self(1_000_039_002);
-    pub const VIDEO_ENCODE_H265_PICTURE_INFO_EXT: Self = Self(1_000_039_003);
-    pub const VIDEO_ENCODE_H265_DPB_SLOT_INFO_EXT: Self = Self(1_000_039_004);
-    pub const VIDEO_ENCODE_H265_NALU_SLICE_SEGMENT_INFO_EXT: Self = Self(1_000_039_005);
-    pub const VIDEO_ENCODE_H265_GOP_REMAINING_FRAME_INFO_EXT: Self = Self(1_000_039_006);
-    pub const VIDEO_ENCODE_H265_PROFILE_INFO_EXT: Self = Self(1_000_039_007);
-    pub const VIDEO_ENCODE_H265_RATE_CONTROL_INFO_EXT: Self = Self(1_000_039_009);
-    pub const VIDEO_ENCODE_H265_RATE_CONTROL_LAYER_INFO_EXT: Self = Self(1_000_039_010);
-    pub const VIDEO_ENCODE_H265_SESSION_CREATE_INFO_EXT: Self = Self(1_000_039_011);
-    pub const VIDEO_ENCODE_H265_QUALITY_LEVEL_PROPERTIES_EXT: Self = Self(1_000_039_012);
-    pub const VIDEO_ENCODE_H265_SESSION_PARAMETERS_GET_INFO_EXT: Self = Self(1_000_039_013);
-    pub const VIDEO_ENCODE_H265_SESSION_PARAMETERS_FEEDBACK_INFO_EXT: Self = Self(1_000_039_014);
+    pub const VIDEO_ENCODE_H265_CAPABILITIES_KHR: Self = Self(1_000_039_000);
+    pub const VIDEO_ENCODE_H265_SESSION_PARAMETERS_CREATE_INFO_KHR: Self = Self(1_000_039_001);
+    pub const VIDEO_ENCODE_H265_SESSION_PARAMETERS_ADD_INFO_KHR: Self = Self(1_000_039_002);
+    pub const VIDEO_ENCODE_H265_PICTURE_INFO_KHR: Self = Self(1_000_039_003);
+    pub const VIDEO_ENCODE_H265_DPB_SLOT_INFO_KHR: Self = Self(1_000_039_004);
+    pub const VIDEO_ENCODE_H265_NALU_SLICE_SEGMENT_INFO_KHR: Self = Self(1_000_039_005);
+    pub const VIDEO_ENCODE_H265_GOP_REMAINING_FRAME_INFO_KHR: Self = Self(1_000_039_006);
+    pub const VIDEO_ENCODE_H265_PROFILE_INFO_KHR: Self = Self(1_000_039_007);
+    pub const VIDEO_ENCODE_H265_RATE_CONTROL_INFO_KHR: Self = Self(1_000_039_009);
+    pub const VIDEO_ENCODE_H265_RATE_CONTROL_LAYER_INFO_KHR: Self = Self(1_000_039_010);
+    pub const VIDEO_ENCODE_H265_SESSION_CREATE_INFO_KHR: Self = Self(1_000_039_011);
+    pub const VIDEO_ENCODE_H265_QUALITY_LEVEL_PROPERTIES_KHR: Self = Self(1_000_039_012);
+    pub const VIDEO_ENCODE_H265_SESSION_PARAMETERS_GET_INFO_KHR: Self = Self(1_000_039_013);
+    pub const VIDEO_ENCODE_H265_SESSION_PARAMETERS_FEEDBACK_INFO_KHR: Self = Self(1_000_039_014);
 }
-#[doc = "Generated from 'VK_EXT_video_encode_h265'"]
+#[doc = "Generated from 'VK_KHR_video_encode_h265'"]
 impl VideoCodecOperationFlagsKHR {
-    pub const ENCODE_H265_EXT: Self = Self(0b10_0000_0000_0000_0000);
+    pub const ENCODE_H265: Self = Self(0b10_0000_0000_0000_0000);
 }
 impl KhrVideoDecodeH264Fn {
     pub const NAME: &'static ::std::ffi::CStr =
         unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_KHR_video_decode_h264\0") };
-    pub const SPEC_VERSION: u32 = 8u32;
+    pub const SPEC_VERSION: u32 = 9u32;
 }
 #[derive(Clone)]
 pub struct KhrVideoDecodeH264Fn;
@@ -3702,7 +3702,7 @@ impl StructureType {
 impl ExtValidationFlagsFn {
     pub const NAME: &'static ::std::ffi::CStr =
         unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_EXT_validation_flags\0") };
-    pub const SPEC_VERSION: u32 = 2u32;
+    pub const SPEC_VERSION: u32 = 3u32;
 }
 #[derive(Clone)]
 pub struct ExtValidationFlagsFn;
@@ -10061,24 +10061,24 @@ impl ExtCalibratedTimestampsFn {
     pub const SPEC_VERSION: u32 = 2u32;
 }
 #[allow(non_camel_case_types)]
-pub type PFN_vkGetPhysicalDeviceCalibrateableTimeDomainsEXT = unsafe extern "system" fn(
+pub type PFN_vkGetPhysicalDeviceCalibrateableTimeDomainsKHR = unsafe extern "system" fn(
     physical_device: PhysicalDevice,
     p_time_domain_count: *mut u32,
-    p_time_domains: *mut TimeDomainEXT,
+    p_time_domains: *mut TimeDomainKHR,
 ) -> Result;
 #[allow(non_camel_case_types)]
-pub type PFN_vkGetCalibratedTimestampsEXT = unsafe extern "system" fn(
+pub type PFN_vkGetCalibratedTimestampsKHR = unsafe extern "system" fn(
     device: Device,
     timestamp_count: u32,
-    p_timestamp_infos: *const CalibratedTimestampInfoEXT<'_>,
+    p_timestamp_infos: *const CalibratedTimestampInfoKHR<'_>,
     p_timestamps: *mut u64,
     p_max_deviation: *mut u64,
 ) -> Result;
 #[derive(Clone)]
 pub struct ExtCalibratedTimestampsFn {
     pub get_physical_device_calibrateable_time_domains_ext:
-        PFN_vkGetPhysicalDeviceCalibrateableTimeDomainsEXT,
-    pub get_calibrated_timestamps_ext: PFN_vkGetCalibratedTimestampsEXT,
+        PFN_vkGetPhysicalDeviceCalibrateableTimeDomainsKHR,
+    pub get_calibrated_timestamps_ext: PFN_vkGetCalibratedTimestampsKHR,
 }
 unsafe impl Send for ExtCalibratedTimestampsFn {}
 unsafe impl Sync for ExtCalibratedTimestampsFn {}
@@ -10092,7 +10092,7 @@ impl ExtCalibratedTimestampsFn {
                 unsafe extern "system" fn get_physical_device_calibrateable_time_domains_ext(
                     _physical_device: PhysicalDevice,
                     _p_time_domain_count: *mut u32,
-                    _p_time_domains: *mut TimeDomainEXT,
+                    _p_time_domains: *mut TimeDomainKHR,
                 ) -> Result {
                     panic!(concat!(
                         "Unable to load ",
@@ -10113,7 +10113,7 @@ impl ExtCalibratedTimestampsFn {
                 unsafe extern "system" fn get_calibrated_timestamps_ext(
                     _device: Device,
                     _timestamp_count: u32,
-                    _p_timestamp_infos: *const CalibratedTimestampInfoEXT<'_>,
+                    _p_timestamp_infos: *const CalibratedTimestampInfoKHR<'_>,
                     _p_timestamps: *mut u64,
                     _p_max_deviation: *mut u64,
                 ) -> Result {
@@ -10137,7 +10137,14 @@ impl ExtCalibratedTimestampsFn {
 }
 #[doc = "Generated from 'VK_EXT_calibrated_timestamps'"]
 impl StructureType {
-    pub const CALIBRATED_TIMESTAMP_INFO_EXT: Self = Self(1_000_184_000);
+    pub const CALIBRATED_TIMESTAMP_INFO_EXT: Self = Self::CALIBRATED_TIMESTAMP_INFO_KHR;
+}
+#[doc = "Generated from 'VK_EXT_calibrated_timestamps'"]
+impl TimeDomainKHR {
+    pub const DEVICE_EXT: Self = Self::DEVICE;
+    pub const CLOCK_MONOTONIC_EXT: Self = Self::CLOCK_MONOTONIC;
+    pub const CLOCK_MONOTONIC_RAW_EXT: Self = Self::CLOCK_MONOTONIC_RAW;
+    pub const QUERY_PERFORMANCE_COUNTER_EXT: Self = Self::QUERY_PERFORMANCE_COUNTER;
 }
 impl AmdShaderCorePropertiesFn {
     pub const NAME: &'static ::std::ffi::CStr = unsafe {
@@ -10154,7 +10161,7 @@ impl StructureType {
 impl KhrVideoDecodeH265Fn {
     pub const NAME: &'static ::std::ffi::CStr =
         unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_KHR_video_decode_h265\0") };
-    pub const SPEC_VERSION: u32 = 7u32;
+    pub const SPEC_VERSION: u32 = 8u32;
 }
 #[derive(Clone)]
 pub struct KhrVideoDecodeH265Fn;
@@ -10211,8 +10218,10 @@ pub struct ExtVertexAttributeDivisorFn;
 #[doc = "Generated from 'VK_EXT_vertex_attribute_divisor'"]
 impl StructureType {
     pub const PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_DIVISOR_PROPERTIES_EXT: Self = Self(1_000_190_000);
-    pub const PIPELINE_VERTEX_INPUT_DIVISOR_STATE_CREATE_INFO_EXT: Self = Self(1_000_190_001);
-    pub const PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_DIVISOR_FEATURES_EXT: Self = Self(1_000_190_002);
+    pub const PIPELINE_VERTEX_INPUT_DIVISOR_STATE_CREATE_INFO_EXT: Self =
+        Self::PIPELINE_VERTEX_INPUT_DIVISOR_STATE_CREATE_INFO_KHR;
+    pub const PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_DIVISOR_FEATURES_EXT: Self =
+        Self::PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_DIVISOR_FEATURES_KHR;
 }
 impl GgpFrameTokenFn {
     pub const NAME: &'static ::std::ffi::CStr =
@@ -11718,7 +11727,7 @@ impl StructureType {
 impl ExtValidationFeaturesFn {
     pub const NAME: &'static ::std::ffi::CStr =
         unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_EXT_validation_features\0") };
-    pub const SPEC_VERSION: u32 = 5u32;
+    pub const SPEC_VERSION: u32 = 6u32;
 }
 #[derive(Clone)]
 pub struct ExtValidationFeaturesFn;
@@ -13654,7 +13663,7 @@ impl QcomRenderPassTransformFn {
     pub const NAME: &'static ::std::ffi::CStr = unsafe {
         ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_QCOM_render_pass_transform\0")
     };
-    pub const SPEC_VERSION: u32 = 3u32;
+    pub const SPEC_VERSION: u32 = 4u32;
 }
 #[derive(Clone)]
 pub struct QcomRenderPassTransformFn;
@@ -14063,7 +14072,7 @@ impl StructureType {
 impl KhrVideoEncodeQueueFn {
     pub const NAME: &'static ::std::ffi::CStr =
         unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_KHR_video_encode_queue\0") };
-    pub const SPEC_VERSION: u32 = 10u32;
+    pub const SPEC_VERSION: u32 = 12u32;
 }
 #[allow(non_camel_case_types)]
 pub type PFN_vkGetPhysicalDeviceVideoEncodeQualityLevelPropertiesKHR =
@@ -15589,7 +15598,7 @@ impl QcomRotatedCopyCommandsFn {
     pub const NAME: &'static ::std::ffi::CStr = unsafe {
         ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_QCOM_rotated_copy_commands\0")
     };
-    pub const SPEC_VERSION: u32 = 1u32;
+    pub const SPEC_VERSION: u32 = 2u32;
 }
 #[derive(Clone)]
 pub struct QcomRotatedCopyCommandsFn;
@@ -17998,7 +18007,7 @@ impl HuaweiClusterCullingShaderFn {
     pub const NAME: &'static ::std::ffi::CStr = unsafe {
         ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_HUAWEI_cluster_culling_shader\0")
     };
-    pub const SPEC_VERSION: u32 = 2u32;
+    pub const SPEC_VERSION: u32 = 3u32;
 }
 #[allow(non_camel_case_types)]
 pub type PFN_vkCmdDrawClusterHUAWEI = unsafe extern "system" fn(
@@ -18085,6 +18094,8 @@ impl ShaderStageFlags {
 impl StructureType {
     pub const PHYSICAL_DEVICE_CLUSTER_CULLING_SHADER_FEATURES_HUAWEI: Self = Self(1_000_404_000);
     pub const PHYSICAL_DEVICE_CLUSTER_CULLING_SHADER_PROPERTIES_HUAWEI: Self = Self(1_000_404_001);
+    pub const PHYSICAL_DEVICE_CLUSTER_CULLING_SHADER_VRS_FEATURES_HUAWEI: Self =
+        Self(1_000_404_002);
 }
 impl ExtBorderColorSwizzleFn {
     pub const NAME: &'static ::std::ffi::CStr = unsafe {
@@ -18416,6 +18427,21 @@ impl SamplerCreateFlags {
 #[doc = "Generated from 'VK_EXT_non_seamless_cube_map'"]
 impl StructureType {
     pub const PHYSICAL_DEVICE_NON_SEAMLESS_CUBE_MAP_FEATURES_EXT: Self = Self(1_000_422_000);
+}
+impl ArmRenderPassStripedFn {
+    pub const NAME: &'static ::std::ffi::CStr =
+        unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_ARM_render_pass_striped\0") };
+    pub const SPEC_VERSION: u32 = 1u32;
+}
+#[derive(Clone)]
+pub struct ArmRenderPassStripedFn;
+#[doc = "Generated from 'VK_ARM_render_pass_striped'"]
+impl StructureType {
+    pub const PHYSICAL_DEVICE_RENDER_PASS_STRIPED_FEATURES_ARM: Self = Self(1_000_424_000);
+    pub const PHYSICAL_DEVICE_RENDER_PASS_STRIPED_PROPERTIES_ARM: Self = Self(1_000_424_001);
+    pub const RENDER_PASS_STRIPE_BEGIN_INFO_ARM: Self = Self(1_000_424_002);
+    pub const RENDER_PASS_STRIPE_INFO_ARM: Self = Self(1_000_424_003);
+    pub const RENDER_PASS_STRIPE_SUBMIT_INFO_ARM: Self = Self(1_000_424_004);
 }
 impl QcomFragmentDensityMapOffsetFn {
     pub const NAME: &'static ::std::ffi::CStr = unsafe {
@@ -21679,6 +21705,17 @@ impl StructureType {
     pub const PHYSICAL_DEVICE_MUTABLE_DESCRIPTOR_TYPE_FEATURES_EXT: Self = Self(1_000_351_000);
     pub const MUTABLE_DESCRIPTOR_TYPE_CREATE_INFO_EXT: Self = Self(1_000_351_002);
 }
+impl ExtLayerSettingsFn {
+    pub const NAME: &'static ::std::ffi::CStr =
+        unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_EXT_layer_settings\0") };
+    pub const SPEC_VERSION: u32 = 2u32;
+}
+#[derive(Clone)]
+pub struct ExtLayerSettingsFn;
+#[doc = "Generated from 'VK_EXT_layer_settings'"]
+impl StructureType {
+    pub const LAYER_SETTINGS_CREATE_INFO_EXT: Self = Self(1_000_496_000);
+}
 impl ArmShaderCoreBuiltinsFn {
     pub const NAME: &'static ::std::ffi::CStr = unsafe {
         ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_ARM_shader_core_builtins\0")
@@ -21950,6 +21987,46 @@ impl StructureType {
     pub const MULTIVIEW_PER_VIEW_RENDER_AREAS_RENDER_PASS_BEGIN_INFO_QCOM: Self =
         Self(1_000_510_001);
 }
+impl KhrVideoMaintenance1Fn {
+    pub const NAME: &'static ::std::ffi::CStr =
+        unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_KHR_video_maintenance1\0") };
+    pub const SPEC_VERSION: u32 = 1u32;
+}
+#[derive(Clone)]
+pub struct KhrVideoMaintenance1Fn;
+#[doc = "Generated from 'VK_KHR_video_maintenance1'"]
+impl BufferCreateFlags {
+    pub const VIDEO_PROFILE_INDEPENDENT_KHR: Self = Self(0b100_0000);
+}
+#[doc = "Generated from 'VK_KHR_video_maintenance1'"]
+impl ImageCreateFlags {
+    pub const VIDEO_PROFILE_INDEPENDENT_KHR: Self = Self(0b1_0000_0000_0000_0000_0000);
+}
+#[doc = "Generated from 'VK_KHR_video_maintenance1'"]
+impl StructureType {
+    pub const PHYSICAL_DEVICE_VIDEO_MAINTENANCE_1_FEATURES_KHR: Self = Self(1_000_515_000);
+    pub const VIDEO_INLINE_QUERY_INFO_KHR: Self = Self(1_000_515_001);
+}
+#[doc = "Generated from 'VK_KHR_video_maintenance1'"]
+impl VideoSessionCreateFlagsKHR {
+    pub const INLINE_QUERIES: Self = Self(0b100);
+}
+impl NvPerStageDescriptorSetFn {
+    pub const NAME: &'static ::std::ffi::CStr = unsafe {
+        ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_NV_per_stage_descriptor_set\0")
+    };
+    pub const SPEC_VERSION: u32 = 1u32;
+}
+#[derive(Clone)]
+pub struct NvPerStageDescriptorSetFn;
+#[doc = "Generated from 'VK_NV_per_stage_descriptor_set'"]
+impl DescriptorSetLayoutCreateFlags {
+    pub const PER_STAGE_NV: Self = Self(0b100_0000);
+}
+#[doc = "Generated from 'VK_NV_per_stage_descriptor_set'"]
+impl StructureType {
+    pub const PHYSICAL_DEVICE_PER_STAGE_DESCRIPTOR_SET_FEATURES_NV: Self = Self(1_000_516_000);
+}
 impl QcomImageProcessing2Fn {
     pub const NAME: &'static ::std::ffi::CStr =
         unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_QCOM_image_processing2\0") };
@@ -22059,6 +22136,20 @@ impl StructureType {
     pub const PHYSICAL_DEVICE_ATTACHMENT_FEEDBACK_LOOP_DYNAMIC_STATE_FEATURES_EXT: Self =
         Self(1_000_524_000);
 }
+impl KhrVertexAttributeDivisorFn {
+    pub const NAME: &'static ::std::ffi::CStr = unsafe {
+        ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_KHR_vertex_attribute_divisor\0")
+    };
+    pub const SPEC_VERSION: u32 = 1u32;
+}
+#[derive(Clone)]
+pub struct KhrVertexAttributeDivisorFn;
+#[doc = "Generated from 'VK_KHR_vertex_attribute_divisor'"]
+impl StructureType {
+    pub const PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_DIVISOR_PROPERTIES_KHR: Self = Self(1_000_525_000);
+    pub const PIPELINE_VERTEX_INPUT_DIVISOR_STATE_CREATE_INFO_KHR: Self = Self(1_000_190_001);
+    pub const PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_DIVISOR_FEATURES_KHR: Self = Self(1_000_190_002);
+}
 impl QnxExternalMemoryScreenBufferFn {
     pub const NAME: &'static ::std::ffi::CStr = unsafe {
         ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_QNX_external_memory_screen_buffer\0")
@@ -22130,6 +22221,263 @@ pub struct MsftLayeredDriverFn;
 #[doc = "Generated from 'VK_MSFT_layered_driver'"]
 impl StructureType {
     pub const PHYSICAL_DEVICE_LAYERED_DRIVER_PROPERTIES_MSFT: Self = Self(1_000_530_000);
+}
+impl KhrCalibratedTimestampsFn {
+    pub const NAME: &'static ::std::ffi::CStr = unsafe {
+        ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_KHR_calibrated_timestamps\0")
+    };
+    pub const SPEC_VERSION: u32 = 1u32;
+}
+#[derive(Clone)]
+pub struct KhrCalibratedTimestampsFn {
+    pub get_physical_device_calibrateable_time_domains_khr:
+        crate::vk::PFN_vkGetPhysicalDeviceCalibrateableTimeDomainsKHR,
+    pub get_calibrated_timestamps_khr: crate::vk::PFN_vkGetCalibratedTimestampsKHR,
+}
+unsafe impl Send for KhrCalibratedTimestampsFn {}
+unsafe impl Sync for KhrCalibratedTimestampsFn {}
+impl KhrCalibratedTimestampsFn {
+    pub fn load<F>(mut _f: F) -> Self
+    where
+        F: FnMut(&::std::ffi::CStr) -> *const c_void,
+    {
+        Self {
+            get_physical_device_calibrateable_time_domains_khr: unsafe {
+                unsafe extern "system" fn get_physical_device_calibrateable_time_domains_khr(
+                    _physical_device: PhysicalDevice,
+                    _p_time_domain_count: *mut u32,
+                    _p_time_domains: *mut TimeDomainKHR,
+                ) -> Result {
+                    panic!(concat!(
+                        "Unable to load ",
+                        stringify!(get_physical_device_calibrateable_time_domains_khr)
+                    ))
+                }
+                let cname = ::std::ffi::CStr::from_bytes_with_nul_unchecked(
+                    b"vkGetPhysicalDeviceCalibrateableTimeDomainsKHR\0",
+                );
+                let val = _f(cname);
+                if val.is_null() {
+                    get_physical_device_calibrateable_time_domains_khr
+                } else {
+                    ::std::mem::transmute(val)
+                }
+            },
+            get_calibrated_timestamps_khr: unsafe {
+                unsafe extern "system" fn get_calibrated_timestamps_khr(
+                    _device: Device,
+                    _timestamp_count: u32,
+                    _p_timestamp_infos: *const CalibratedTimestampInfoKHR<'_>,
+                    _p_timestamps: *mut u64,
+                    _p_max_deviation: *mut u64,
+                ) -> Result {
+                    panic!(concat!(
+                        "Unable to load ",
+                        stringify!(get_calibrated_timestamps_khr)
+                    ))
+                }
+                let cname = ::std::ffi::CStr::from_bytes_with_nul_unchecked(
+                    b"vkGetCalibratedTimestampsKHR\0",
+                );
+                let val = _f(cname);
+                if val.is_null() {
+                    get_calibrated_timestamps_khr
+                } else {
+                    ::std::mem::transmute(val)
+                }
+            },
+        }
+    }
+}
+#[doc = "Generated from 'VK_KHR_calibrated_timestamps'"]
+impl StructureType {
+    pub const CALIBRATED_TIMESTAMP_INFO_KHR: Self = Self(1_000_184_000);
+}
+impl KhrMaintenance6Fn {
+    pub const NAME: &'static ::std::ffi::CStr =
+        unsafe { ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"VK_KHR_maintenance6\0") };
+    pub const SPEC_VERSION: u32 = 1u32;
+}
+#[allow(non_camel_case_types)]
+pub type PFN_vkCmdBindDescriptorSets2KHR = unsafe extern "system" fn(
+    command_buffer: CommandBuffer,
+    p_bind_descriptor_sets_info: *const BindDescriptorSetsInfoKHR<'_>,
+);
+#[allow(non_camel_case_types)]
+pub type PFN_vkCmdPushConstants2KHR = unsafe extern "system" fn(
+    command_buffer: CommandBuffer,
+    p_push_constants_info: *const PushConstantsInfoKHR<'_>,
+);
+#[allow(non_camel_case_types)]
+pub type PFN_vkCmdPushDescriptorSet2KHR = unsafe extern "system" fn(
+    command_buffer: CommandBuffer,
+    p_push_descriptor_set_info: *const PushDescriptorSetInfoKHR<'_>,
+);
+#[allow(non_camel_case_types)]
+pub type PFN_vkCmdPushDescriptorSetWithTemplate2KHR = unsafe extern "system" fn(
+    command_buffer: CommandBuffer,
+    p_push_descriptor_set_with_template_info: *const PushDescriptorSetWithTemplateInfoKHR<'_>,
+);
+#[allow(non_camel_case_types)]
+pub type PFN_vkCmdSetDescriptorBufferOffsets2EXT = unsafe extern "system" fn(
+    command_buffer: CommandBuffer,
+    p_set_descriptor_buffer_offsets_info: *const SetDescriptorBufferOffsetsInfoEXT<'_>,
+);
+#[allow(non_camel_case_types)]
+pub type PFN_vkCmdBindDescriptorBufferEmbeddedSamplers2EXT = unsafe extern "system" fn (command_buffer : CommandBuffer , p_bind_descriptor_buffer_embedded_samplers_info : * const BindDescriptorBufferEmbeddedSamplersInfoEXT < '_ > ,) ;
+#[derive(Clone)]
+pub struct KhrMaintenance6Fn {
+    pub cmd_bind_descriptor_sets2_khr: PFN_vkCmdBindDescriptorSets2KHR,
+    pub cmd_push_constants2_khr: PFN_vkCmdPushConstants2KHR,
+    pub cmd_push_descriptor_set2_khr: PFN_vkCmdPushDescriptorSet2KHR,
+    pub cmd_push_descriptor_set_with_template2_khr: PFN_vkCmdPushDescriptorSetWithTemplate2KHR,
+    pub cmd_set_descriptor_buffer_offsets2_ext: PFN_vkCmdSetDescriptorBufferOffsets2EXT,
+    pub cmd_bind_descriptor_buffer_embedded_samplers2_ext:
+        PFN_vkCmdBindDescriptorBufferEmbeddedSamplers2EXT,
+}
+unsafe impl Send for KhrMaintenance6Fn {}
+unsafe impl Sync for KhrMaintenance6Fn {}
+impl KhrMaintenance6Fn {
+    pub fn load<F>(mut _f: F) -> Self
+    where
+        F: FnMut(&::std::ffi::CStr) -> *const c_void,
+    {
+        Self {
+            cmd_bind_descriptor_sets2_khr: unsafe {
+                unsafe extern "system" fn cmd_bind_descriptor_sets2_khr(
+                    _command_buffer: CommandBuffer,
+                    _p_bind_descriptor_sets_info: *const BindDescriptorSetsInfoKHR<'_>,
+                ) {
+                    panic!(concat!(
+                        "Unable to load ",
+                        stringify!(cmd_bind_descriptor_sets2_khr)
+                    ))
+                }
+                let cname = ::std::ffi::CStr::from_bytes_with_nul_unchecked(
+                    b"vkCmdBindDescriptorSets2KHR\0",
+                );
+                let val = _f(cname);
+                if val.is_null() {
+                    cmd_bind_descriptor_sets2_khr
+                } else {
+                    ::std::mem::transmute(val)
+                }
+            },
+            cmd_push_constants2_khr: unsafe {
+                unsafe extern "system" fn cmd_push_constants2_khr(
+                    _command_buffer: CommandBuffer,
+                    _p_push_constants_info: *const PushConstantsInfoKHR<'_>,
+                ) {
+                    panic!(concat!(
+                        "Unable to load ",
+                        stringify!(cmd_push_constants2_khr)
+                    ))
+                }
+                let cname =
+                    ::std::ffi::CStr::from_bytes_with_nul_unchecked(b"vkCmdPushConstants2KHR\0");
+                let val = _f(cname);
+                if val.is_null() {
+                    cmd_push_constants2_khr
+                } else {
+                    ::std::mem::transmute(val)
+                }
+            },
+            cmd_push_descriptor_set2_khr: unsafe {
+                unsafe extern "system" fn cmd_push_descriptor_set2_khr(
+                    _command_buffer: CommandBuffer,
+                    _p_push_descriptor_set_info: *const PushDescriptorSetInfoKHR<'_>,
+                ) {
+                    panic!(concat!(
+                        "Unable to load ",
+                        stringify!(cmd_push_descriptor_set2_khr)
+                    ))
+                }
+                let cname = ::std::ffi::CStr::from_bytes_with_nul_unchecked(
+                    b"vkCmdPushDescriptorSet2KHR\0",
+                );
+                let val = _f(cname);
+                if val.is_null() {
+                    cmd_push_descriptor_set2_khr
+                } else {
+                    ::std::mem::transmute(val)
+                }
+            },
+            cmd_push_descriptor_set_with_template2_khr: unsafe {
+                unsafe extern "system" fn cmd_push_descriptor_set_with_template2_khr(
+                    _command_buffer: CommandBuffer,
+                    _p_push_descriptor_set_with_template_info : * const PushDescriptorSetWithTemplateInfoKHR < '_ >,
+                ) {
+                    panic!(concat!(
+                        "Unable to load ",
+                        stringify!(cmd_push_descriptor_set_with_template2_khr)
+                    ))
+                }
+                let cname = ::std::ffi::CStr::from_bytes_with_nul_unchecked(
+                    b"vkCmdPushDescriptorSetWithTemplate2KHR\0",
+                );
+                let val = _f(cname);
+                if val.is_null() {
+                    cmd_push_descriptor_set_with_template2_khr
+                } else {
+                    ::std::mem::transmute(val)
+                }
+            },
+            cmd_set_descriptor_buffer_offsets2_ext: unsafe {
+                unsafe extern "system" fn cmd_set_descriptor_buffer_offsets2_ext(
+                    _command_buffer: CommandBuffer,
+                    _p_set_descriptor_buffer_offsets_info: *const SetDescriptorBufferOffsetsInfoEXT<
+                        '_,
+                    >,
+                ) {
+                    panic!(concat!(
+                        "Unable to load ",
+                        stringify!(cmd_set_descriptor_buffer_offsets2_ext)
+                    ))
+                }
+                let cname = ::std::ffi::CStr::from_bytes_with_nul_unchecked(
+                    b"vkCmdSetDescriptorBufferOffsets2EXT\0",
+                );
+                let val = _f(cname);
+                if val.is_null() {
+                    cmd_set_descriptor_buffer_offsets2_ext
+                } else {
+                    ::std::mem::transmute(val)
+                }
+            },
+            cmd_bind_descriptor_buffer_embedded_samplers2_ext: unsafe {
+                unsafe extern "system" fn cmd_bind_descriptor_buffer_embedded_samplers2_ext(
+                    _command_buffer: CommandBuffer,
+                    _p_bind_descriptor_buffer_embedded_samplers_info : * const BindDescriptorBufferEmbeddedSamplersInfoEXT < '_ >,
+                ) {
+                    panic!(concat!(
+                        "Unable to load ",
+                        stringify!(cmd_bind_descriptor_buffer_embedded_samplers2_ext)
+                    ))
+                }
+                let cname = ::std::ffi::CStr::from_bytes_with_nul_unchecked(
+                    b"vkCmdBindDescriptorBufferEmbeddedSamplers2EXT\0",
+                );
+                let val = _f(cname);
+                if val.is_null() {
+                    cmd_bind_descriptor_buffer_embedded_samplers2_ext
+                } else {
+                    ::std::mem::transmute(val)
+                }
+            },
+        }
+    }
+}
+#[doc = "Generated from 'VK_KHR_maintenance6'"]
+impl StructureType {
+    pub const PHYSICAL_DEVICE_MAINTENANCE_6_FEATURES_KHR: Self = Self(1_000_545_000);
+    pub const PHYSICAL_DEVICE_MAINTENANCE_6_PROPERTIES_KHR: Self = Self(1_000_545_001);
+    pub const BIND_MEMORY_STATUS_KHR: Self = Self(1_000_545_002);
+    pub const BIND_DESCRIPTOR_SETS_INFO_KHR: Self = Self(1_000_545_003);
+    pub const PUSH_CONSTANTS_INFO_KHR: Self = Self(1_000_545_004);
+    pub const PUSH_DESCRIPTOR_SET_INFO_KHR: Self = Self(1_000_545_005);
+    pub const PUSH_DESCRIPTOR_SET_WITH_TEMPLATE_INFO_KHR: Self = Self(1_000_545_006);
+    pub const SET_DESCRIPTOR_BUFFER_OFFSETS_INFO_EXT: Self = Self(1_000_545_007);
+    pub const BIND_DESCRIPTOR_BUFFER_EMBEDDED_SAMPLERS_INFO_EXT: Self = Self(1_000_545_008);
 }
 impl NvDescriptorPoolOverallocationFn {
     pub const NAME: &'static ::std::ffi::CStr = unsafe {
